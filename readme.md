@@ -1,24 +1,25 @@
 # 📚 TrainWise – AI-Powered Training Recommender
 
-TrainWise is a Node.js Express backend that uses OpenAI’s GPT model to recommend university training opportunities to students based on their academic interests or project needs.
+TrainWise AI is a conversational assistant powered by AI that helps university students discover relevant training opportunities (i.e., cross-departmental courses, workshops, and skills sessions) based on their goals, interests, or research needs.
+
+## 🎯 Examples
+See how students can use TrainWise:
+
+👉 **[Explore Examples](example.md)**  
 
 ---
+## 🛠️ Prerequisites  
+Before running the project, ensure you have:  
+- **Node.js** installed 
+- An **OpenAI API key**.  
 
-## 🚀 Features
-
-- Recommends training programs using OpenAI's GPT-4o mini model
-- Accepts message history to provide context-aware suggestions
-- Express backend with CORS enabled for local frontend access
-
-
-
-## 📦 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/TrainWise.git
-cd TrainWise
+git clone https://github.com/Qianhui-Lin/AI_for_students.git
+cd AI_for_students
 ```
 
 ### 2. Install Dependencies
@@ -70,7 +71,4 @@ You can get your API key from:
 ---
 
 
-## ✅ Note
-
-> The actual API key is excluded from the repository for security reasons. Please create a `.env` file based on `.env.example` with your own OpenAI key to run this app locally.
 
