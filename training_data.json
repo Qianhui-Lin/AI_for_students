@@ -1,0 +1,99 @@
+[
+    {
+      "title": "Intro to R for Social Science",
+      "description": "Learn the basics of R programming for social science research.",
+      "time": "2025-04-30 14:00",
+      "place": "Room 101, Management School",
+      "website": "https://university.edu/r-workshop",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "Data Ethics and Privacy",
+      "description": "Understand ethical issues in data handling.",
+      "time": "2025-05-01 10:00",
+      "place": "Online",
+      "website": "https://university.edu/data-ethics",
+      "eligible_students": ["Undergraduate", "MSc", "PhD"]
+    },
+    {
+      "title": "Python for Data Analysis",
+      "description": "Hands-on workshop on using Python for analyzing research data.",
+      "time": "2025-05-03 13:00",
+      "place": "C34, Infolab",
+      "website": "https://university.edu/python-data",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "Getting Started with OneNote",
+      "description": "Learn to organize your academic notes effectively using OneNote.",
+      "time": "2025-05-05 09:30",
+      "place": "Online",
+      "website": "https://university.edu/onenote-workshop",
+      "eligible_students": ["Undergraduate", "MSc", "PhD"]
+    },
+    {
+      "title": "Reference Management Tools: Zotero & Mendeley",
+      "description": "Overview of popular tools for managing and citing research references.",
+      "time": "2025-05-06 15:00",
+      "place": "Library Supported Learning Space",
+      "website": "https://university.edu/reference-tools",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "Academic Writing for Researchers",
+      "description": "Develop your academic writing skills with practical tips and exercises.",
+      "time": "2025-05-08 10:00",
+      "place": "SR 21, Bowland North",
+      "website": "https://university.edu/academic-writing",
+      "eligible_students": ["All students"]
+    },
+    {
+      "title": "Designing Effective Conference Posters",
+      "description": "Learn best practices for creating eye-catching and informative posters.",
+      "time": "2025-05-10 14:00",
+      "place": "Online",
+      "website": "https://university.edu/poster-design",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "Presentation Skills for Researchers",
+      "description": "Tips and techniques for delivering impactful research presentations.",
+      "time": "2025-05-12 11:00",
+      "place": "Training Room B, Lancaster Environment Centre",
+      "website": "https://university.edu/presentation-skills",
+      "eligible_students": ["Undergraduate", "MSc", "PhD"]
+    },
+    {
+      "title": "Time Management for Grad Students",
+      "description": "Strategies to manage your time efficiently during your research journey.",
+      "time": "2025-05-14 16:00",
+      "place": "Online",
+      "website": "https://university.edu/time-management",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "AI Tools for Academic Research",
+      "description": "Explore how AI tools can enhance your literature review, writing, and analysis.",
+      "time": "2025-05-16 13:00",
+      "place": "Infolab",
+      "website": "https://university.edu/ai-tools",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "Policy Engagement for Researchers",
+      "description": "Learn how to communicate your research effectively to policymakers and influence policy.",
+      "time": "2025-05-18 10:00",
+      "place": "Room 303, Confucious Institute",
+      "website": "https://university.edu/policy-engagement",
+      "eligible_students": ["MRes", "PhD"]
+    },
+    {
+      "title": "Conducting a Literature Review",
+      "description": "Learn systematic approaches to conducting a thorough and organized literature review.",
+      "time": "2025-05-20 14:00",
+      "place": "Library Seminar Room A",
+      "website": "https://university.edu/lit-review",
+      "eligible_students": ["MSc", "MRes", "PhD"]
+    }
+  ]
+  

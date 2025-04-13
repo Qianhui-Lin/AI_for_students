@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const OpenAI = require("openai");
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 app.use(cors());
@@ -31,7 +33,21 @@ app.get("/", (req, res) => {
 
 app.post('/recommend', async (req, res) => {
   const messages = req.body.messages || [];
-  const formatted = trainingEvents.map((e, i) => `${i + 1}. ${e}`).join("\n");
+  let events = [];
+  try {
+    const data = fs.readFileSync(path.join(__dirname, 'training_data.json'), 'utf-8');
+    events = JSON.parse(data);
+  } catch (error) {
+    console.error("❌ Failed to read trainingData.json:", error);
+    return res.status(500).json({ error: "Failed to load training data." });
+  }
+
+  const formatted = events.map((e, i) => {
+    const eligible = e.eligible_students?.join(", ") || "All students";
+    return `${i + 1}. ${e.title} - ${e.description} 
+  (Time: ${e.time}, Place: ${e.place}, Info: ${e.website}, Eligible: ${eligible})`;
+  }).join("\n\n");
+  
   
   try {
       const chatResponse = await openai.chat.completions.create({
@@ -39,7 +55,16 @@ app.post('/recommend', async (req, res) => {
         messages: [
           {
             role: "system",
-            content: "You are a helpful assistant that recommends university training opportunities to students based on their interests or project needs. Use the provided training list when suggesting options."
+            content: `You are an intelligent assistant helping university students discover training opportunities across departments.
+        
+        Each event includes:
+        - a title
+        - a description
+        - time and place
+        - a website link for more details
+        - a list of eligible students (e.g., MSc, MRes, PhD)
+        
+        Only recommend trainings that are appropriate for the student’s needs or goals.`
           },
           {
             role: "user",
@@ -47,6 +72,7 @@ app.post('/recommend', async (req, res) => {
           },
           ...messages
         ]
+      
       });
   
       res.json({ response: chatResponse.choices[0].message.content });
