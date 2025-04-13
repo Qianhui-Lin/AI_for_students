@@ -18,14 +18,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const trainingEvents = [
-  "Intro to R for Social Science - Learn the basics of R programming for social science research.",
-  "Advanced Machine Learning in Python - Deep dive into machine learning models using Python.",
-  "Academic Writing Workshop - Improve writing skills for thesis and publication.",
-  "Data Ethics and Privacy - Understand ethical issues in data handling.",
-  "Environmental Modelling with GIS - Learn GIS tools for environmental research.",
-  "Cross-Disciplinary Research Skills - A short course on how to work across disciplines effectively."
-];
+
 
 app.get("/", (req, res) => {
     res.send("Hello from the backend!");

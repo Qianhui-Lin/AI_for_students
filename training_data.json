@@ -94,6 +94,15 @@
       "place": "Library Seminar Room A",
       "website": "https://university.edu/lit-review",
       "eligible_students": ["MSc", "MRes", "PhD"]
+    },
+    {
+      "title": "Environmental Modelling with GIS",
+      "description": "Hands-on training in using Geographic Information Systems (GIS) to analyze and model environmental data. Learn practical techniques for mapping, spatial analysis, and scenario simulation.",
+      "time": "2025-05-06 13:00",
+      "place": "A517, Lancaster Environment Centre",
+      "website": "https://university.edu/gis-training",
+      "eligible_students": ["MSc", "MRes", "PhD"]
     }
+    
   ]
   
